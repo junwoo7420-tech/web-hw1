@@ -1,111 +1,223 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 영화 보드</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="좋아하는 영화와 오늘의 박스오피스 TOP 5를 소개하는 영화 보드입니다.">
+  <title>Movie Board | 영화 보드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="top">
-        <h1>내 영화 보드</h1>
-        <nav>
-            <ul>
-                <li><a href="#board">보드</a></li>
-                <li><a href="#about">소개</a></li>
-                <li><a href="detail.html">상세</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h2>요즘 내가 고른 영화 다섯 편</h2>
-        <p>포스터 위에 마우스를 올려 보세요.</p>
+  <header class="site-header">
+    <a class="logo" href="index.html">MOVIE<span>BOARD</span></a>
+    <nav aria-label="주요 메뉴">
+      <a href="#mine">MY PICKS</a>
+      <a href="#boxoffice">BOX OFFICE</a>
+      <a href="detail.html">DETAIL</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">MY CINEMA, MY STORY</p>
+        <h1 id="hero-title">나의 영화 보드</h1>
+        <p>좋아하는 영화 다섯 편과 오늘의 박스오피스 TOP 5</p>
+        <a class="hero-button" href="#mine">영화 둘러보기 ↓</a>
+      </div>
     </section>
 
-    <main>
-        <section class="board" id="board">
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/gpTDJo5l3S6kMUcpBkfA1yGyheR.jpg" alt="남자가 사랑할 때 포스터">
-                <span class="badge">7.2</span>
-                <div class="info">
-                    <h2>남자가 사랑할 때</h2>
-                    <p class="year">2014-01-22</p>
-                    <p class="overview"> " 나이만 먹었을 뿐, 대책 없는 이 남자, 아직도 형 집에 얹혀 살며 조카한테 삥 뜯기는 이 남자, 빌려준 돈은 기필코 받아오는 이 남자, 목사라고 인정사정 봐 주지 않는 이 남자, 여자한테 다가갈 땐 바지부터 내리고 보는 막무가내 이 남자, 평생 사랑과는 거리가 멀었던 한 남자가 사랑에 눈 뜨다! 일생에 단 한번, 남자가 사랑할 때"</p>
-                </div>
-            </article>
+    <section class="movie-section" id="mine">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PERSONAL COLLECTION</p>
+          <h2>내가 좋아하는 영화</h2>
+        </div>
+        <span class="section-count">내가 좋아하는 영화 / 05</span>
+      </div>
 
-        
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/j4TIfwFrm8WnckByTnMFEAuIVju.jpg" alt="레디 플레이 원 포스터">
-                <span class="badge">7.5</span>
-                <div class="info">
-                    <h2>레디 플레이 원</h2>
-                    <p class="year">2018-03-28</p>
-                    <p class="overview"> "2045년, 암울한 현실과 달리 가상현실 오아시스에서는 누구든 원하는 캐릭터로 상상하는 모든 걸 할 수 있다. 웨이드 와츠의 유일한 낙은 오아시스에 접속하는 것. 어느 날 오아시스의 창시자인 괴짜 천재 제임스 할리데이는 자신이 가상현실 속에 숨겨둔 3개의 미션에서 우승하는 사람에게 오아시스의 소유권과 막대한 유산을 상속한다는 유언을 남기고, 그가 사랑했던 80년대 대중문화 속에 힌트가 있음을 알린다. 와츠가 첫 번째 수수께끼를 푸는 데 성공하자 이를 저지하기 위해 현실에서 살인도 마다하지 않는 IOI라는 거대 기업이 뛰어드는데..."</p>
-                </div>
-            </article>
-       
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/dyqQ12gZGwl5Y0R9UsLBDkZWOUA.jpg" alt="그린 북 포스터">
-                <span class="badge">8.3</span>
-                <div class="info">
-                    <h2>그린 북</h2>
-                    <p class="year">2018-11-16</p>
-                    <p class="overview"> " 1962년 미국, 입담과 주먹만 믿고 살아가던 토니 발레롱가는 교양과 우아함 그 자체인 천재 피아니스트 돈 셜리의 운전기사 면접을 보게 된다. 백악관에도 초청되는 등 미국 전역에서 콘서트 요청을 받으며 명성을 떨치고 있는 돈 셜리는 위험하기로 소문난 미국 남부 투어 공연을 떠나기로 결심하고, 투어 기간 동안 자신의 보디가드 겸 운전기사로 토니를 고용한다. 거친 인생을 살아온 토니와 교양과 기품을 지키며 살아온 돈. 생각, 행동, 말투, 취향까지 달라도 너무 다른 두 사람은 그들을 위한 여행안내서 그린북에 의존해 특별한 남부 투어를 시작하는데..."</p>
-                </div>
-            </article>
-       
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/bL0bBepUCLFcCj2ATFD40FbyDEl.jpg" alt="메이즈 러너 포스터">
-                <span class="badge">7.2</span>
-                <div class="info">
-                    <h2>메이즈 러너</h2>
-                    <p class="year">2014-09-10</p>
-                    <p class="overview"> "삭제된 기억, 거대한 미로로 둘러싸인 낯선 공간  모든 기억이 삭제된 채 의문의 장소로 보내진 토마스. 토마스는 미로에 갇힌 그곳에서 자신과 같은 상황의 사람들을 만난다. 그들은 매일 밤 살아 움직이는 미로에서 정체를 알 수 없는 죽음의 존재와 대립하며, 지옥으로부터 빠져나갈 탈출구인 지도를 완성해 나간다. 그러던 어느 날, 미로의 문이 열리고 그들은 마지막 선택의 기로에 놓이게 되는데…"</p>
-                </div>
-            </article>
-        
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/lxjGbkRnY9d2j8cxIHxX57NNvRH.jpg" alt="악마는 프라다를 입는다 포스터">
-                <span class="badge">8.4</span>
-                <div class="info">
-                    <h2>악마는 프라다를 입는다</h2>
-                    <p class="year">2006-06-29</p>
-                    <p class="overview"> "명문대를 졸업한 소도시 출신의 앤드리아 삭스. 최고의 저널리스트 꿈을 안고 뉴욕에 상경하지만 그녀의 이력서를 보고 연락이 온 곳은 딱 한곳. 세계 최고의 패션지 런웨이 뿐이다. 그것도 기자가 아닌 편집장 미란다의 말단 비서로서. 미란다 프리슬리는 세계 패션쇼의 스케쥴을 바꿀 수 있을 만큼의 거물이지만 까다로운 완벽주의자로 악명이 높다. 직장생활의 꿈에 부푼 앤드리아. 그러나 현실은 지옥 그 자체. 악마 같은 미란다 밑에서 그녀는 과연 살아남을 수 있을까?"</p>
-                </div>
-            </article>
-        </section>
+      <div class="movie-grid">
+        <article class="movie-card">
+          <a class="poster-link" href="detail.html" aria-label="남자가 사랑할 때 상세 페이지">
+            <img src="https://image.tmdb.org/t/p/w342/gpTDJo5l3S6kMUcpBkfA1yGyheR.jpg" alt="남자가 사랑할 때 포스터" loading="lazy">
+          </a>
+          <div class="movie-info">
+            <span class="movie-label">내가 좋아하는 영화 / 01</span>
+            <h3>남자가 사랑할 때</h3>
+            <p class="movie-meta">2014</p>
+            <p class="rating">7.2 <span>/ 10</span></p>
+          </div>
+        </article>
 
-        
+        <article class="movie-card">
+          <a class="poster-link" href="detail.html" aria-label="레디 플레이어 원 상세 페이지">
+            <img src="https://image.tmdb.org/t/p/w342/j4TIfwFrm8WnckByTnMFEAuIVju.jpg" alt="레디 플레이어 원 포스터" loading="lazy">
+          </a>
+          <div class="movie-info">
+            <span class="movie-label">내가 좋아하는 영화 / 02</span>
+            <h3>레디 플레이어 원</h3>
+            <p class="movie-meta">2018</p>
+            <p class="rating">7.5 <span>/ 10</span></p>
+          </div>
+        </article>
 
-        
-        <section id="about">
-            <h2>한번만 보기 함든 작품들</h2>
-            <p>(권준우) 제가 본 영화들중 가끔씩 그거 재미있었지 하면서 다시보는 영화들로 추려봤습니다.</p>
+        <article class="movie-card">
+          <a class="poster-link" href="detail.html" aria-label="그린 북 상세 페이지">
+            <img src="https://image.tmdb.org/t/p/w342/dyqQ12gZGwl5Y0R9UsLBDkZWOUA.jpg" alt="그린 북 포스터" loading="lazy">
+          </a>
+          <div class="movie-info">
+            <span class="movie-label">내가 좋아하는 영화 / 03</span>
+            <h3>그린 북</h3>
+            <p class="movie-meta">2018</p>
+            <p class="rating">8.3 <span>/ 10</span></p>
+          </div>
+        </article>
 
-        </section>
+        <article class="movie-card">
+          <a class="poster-link" href="detail.html" aria-label="메이즈 러너 상세 페이지">
+            <img src="https://image.tmdb.org/t/p/w342/bL0bBepUCLFcCj2ATFD40FbyDEl.jpg" alt="메이즈 러너 포스터" loading="lazy">
+          </a>
+          <div class="movie-info">
+            <span class="movie-label">내가 좋아하는 영화 / 04</span>
+            <h3>메이즈 러너</h3>
+            <p class="movie-meta">2014</p>
+            <p class="rating">7.2 <span>/ 10</span></p>
+          </div>
+        </article>
 
-        <section id="about">
-            <h2>이 보드에 대하여</h2>
-            <p>만든 사람과 영화를 고른 기준을 한두 문장으로 적습니다.</p>
+        <article class="movie-card">
+          <a class="poster-link" href="detail.html" aria-label="악마는 프라다를 입는다 상세 페이지">
+            <img
+              src="https://image.tmdb.org/t/p/w342/lxjGbkRnY9d2j8cxIHxX57NNvRH.jpg"
+              srcset="https://image.tmdb.org/t/p/w342/lxjGbkRnY9d2j8cxIHxX57NNvRH.jpg 342w, https://image.tmdb.org/t/p/w500/lxjGbkRnY9d2j8cxIHxX57NNvRH.jpg 500w, https://image.tmdb.org/t/p/w780/lxjGbkRnY9d2j8cxIHxX57NNvRH.jpg 780w"
+              sizes="(max-width: 600px) 100vw, (max-width: 1023px) 50vw, 25vw"
+              alt="악마는 프라다를 입는다 포스터"
+              loading="lazy">
+          </a>
+          <div class="movie-info">
+            <span class="movie-label">내가 좋아하는 영화 / 05</span>
+            <h3>악마는 프라다를 입는다</h3>
+            <p class="movie-meta">2006</p>
+            <p class="rating">7.4 <span>/ 10</span></p>
+            <a class="text-link" href="detail.html">상세 정보 보기 ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <p>포스터와 영화 정보는 TMDB 검색 결과를 그대로 옮겼습니다.</p>
-        </section>
-    </main>
+    <section class="movie-section boxoffice-section" id="boxoffice">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">KOREAN BOX OFFICE</p>
+          <h2>일별 박스오피스 TOP 5</h2>
+          <p class="section-description">영화진흥위원회 KOBIS 2026년 10월 26일 기준</p>
+        </div>
+        <span class="section-count">TOP 05</span>
+      </div>
 
+      <div class="movie-grid">
+        <article class="movie-card boxoffice-card">
+          <div class="poster-wrap">
+            <span class="rank-badge">01</span>
+            <img src="https://image.tmdb.org/t/p/w342/5TMyytCI5Pfc9c1eNsljiCdiB05.jpg" alt="극장판 치이카와: 인어 섬의 비밀 포스터" loading="lazy">
+          </div>
+          <div class="movie-info">
+            <span class="movie-label">BOX OFFICE #1</span>
+            <h3>극장판 치이카와: 인어 섬의 비밀</h3>
+            <p class="movie-meta">2026</p>
+            <p class="rating">7.1 <span>/ 10</span></p>
+            <dl class="boxoffice-stats">
+              <div><dt>일일 관객</dt><dd>20,151명</dd></div>
+              <div><dt>누적 관객</dt><dd>2,268,255명</dd></div>
+              <div><dt>증감률</dt><dd class="change">-</dd></div>
+            </dl>
+          </div>
+        </article>
 
-    
+        <article class="movie-card boxoffice-card">
+          <div class="poster-wrap">
+            <span class="rank-badge">02</span>
+            <img src="https://image.tmdb.org/t/p/w342/c55ijsOdntj6P25vDwHLdgsBpmV.jpg" alt="암살자(들) 포스터" loading="lazy">
+          </div>
+          <div class="movie-info">
+            <span class="movie-label">BOX OFFICE #2</span>
+            <h3>암살자(들)</h3>
+            <p class="movie-meta">2026</p>
+            <p class="rating">7.2 <span>/ 10</span></p>
+            <dl class="boxoffice-stats">
+              <div><dt>일일 관객</dt><dd>7,621명</dd></div>
+              <div><dt>누적 관객</dt><dd>3,382,043명</dd></div>
+              <div><dt>증감률</dt><dd class="change">-</dd></div>
+            </dl>
+          </div>
+        </article>
 
+        <article class="movie-card boxoffice-card">
+          <div class="poster-wrap">
+            <span class="rank-badge">03</span>
+            <img src="https://image.tmdb.org/t/p/w342/wkm9BQLok7U2KihcCspCa663Qse.jpg" alt="실낙원 포스터" loading="lazy">
+          </div>
+          <div class="movie-info">
+            <span class="movie-label">BOX OFFICE #3</span>
+            <h3>실낙원</h3>
+            <p class="movie-meta">2026</p>
+            <p class="rating">8.0 <span>/ 10</span></p>
+            <dl class="boxoffice-stats">
+              <div><dt>일일 관객</dt><dd>7,319명</dd></div>
+              <div><dt>누적 관객</dt><dd>112,191명</dd></div>
+              <div><dt>증감률</dt><dd class="change">-</dd></div>
+            </dl>
+          </div>
+        </article>
 
-    <footer>
-        <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
-        This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
-        <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org/movie/258313)</p>
-    </footer>
+        <article class="movie-card boxoffice-card">
+          <div class="poster-wrap">
+            <span class="rank-badge">04</span>
+            <img src="https://image.tmdb.org/t/p/w342/ueigb5zra1tj6FTK9yhh2P33P9B.jpg" alt="타짜: 벨제붑의 노래 포스터" loading="lazy">
+          </div>
+          <div class="movie-info">
+            <span class="movie-label">BOX OFFICE #4</span>
+            <h3>타짜: 벨제붑의 노래</h3>
+            <p class="movie-meta">2026</p>
+            <p class="rating">7.0 <span>/ 10</span></p>
+            <dl class="boxoffice-stats">
+              <div><dt>일일 관객</dt><dd>7,011명</dd></div>
+              <div><dt>누적 관객</dt><dd>2,006,478명</dd></div>
+              <div><dt>증감률</dt><dd class="change">-</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="movie-card boxoffice-card">
+          <div class="poster-wrap">
+            <span class="rank-badge">05</span>
+            <img src="https://image.tmdb.org/t/p/w342/LSGpoSAlitss0KOvVakkeUToZo.jpg" alt="클레이페이스 포스터" loading="lazy">
+          </div>
+          <div class="movie-info">
+            <span class="movie-label">BOX OFFICE #5</span>
+            <h3>클레이페이스</h3>
+            <p class="movie-meta">2026</p>
+            <p class="rating">7.5 <span>/ 10</span></p>
+            <dl class="boxoffice-stats">
+              <div><dt>일일 관객</dt><dd>6,898명</dd></div>
+              <div><dt>누적 관객</dt><dd>84,196명</dd></div>
+              <div><dt>증감률</dt><dd class="change">-</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="index.html">MOVIE<span>BOARD</span></a>
+    <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다. This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
+    <p>박스오피스 데이터: 영화진흥위원회 영화관입장권통합전산망(KOBIS), 기준일 2026-10-26</p>
+    <p class="copyright">© 2026 Movie Board · 웹개발기초 실습과제 #1</p>
+  </footer>
 </body>
 </html>
